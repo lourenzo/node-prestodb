@@ -1,0 +1,15 @@
+{
+  "name": "node-prestodb",
+  "version": "1.0.0",
+  "description": "PrestoDB Client for NodeJS",
+  "main": "lib/index.js",
+  "author": "Lourenzo Ferreira <lourenzo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "co": "^4.6.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.3",
+    "node-fetch": "^1.6.3"
+  }
+}

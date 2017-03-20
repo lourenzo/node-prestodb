@@ -4,7 +4,7 @@ const debug = require('debug')('node-prestodb:index.js');
 const fetch = require('node-fetch');
 
 // @TODO: move to configs
-const prestoURL = 'localhost:8080';
+const prestoURL = 'http://localhost:8080';
 const prestoHeaders = { 'X-Presto-User': 'presto' };
 
 function loopNextUri(uri) {
@@ -22,7 +22,7 @@ function loopNextUri(uri) {
           debug('emit data');
           //, body.data.toString());
         }
-        
+
 
         // has nextUri
         if (body.nextUri) {
@@ -32,7 +32,7 @@ function loopNextUri(uri) {
         } else {
           resolve(body);
         }
-        
+
       })
       .catch(reject);
   });
@@ -56,12 +56,9 @@ function sendStatement(query) {
 
 let query = 'SELECT * FROM hive.vivo.linhas_teste LIMIT 10';
 sendStatement(query).then(() => {
-  console.log('Good');
-  console.log(arguments);
+  debug('Good');
+  debug(arguments);
 }).catch((e) => {
   console.error('Bad');
   console.error(e);
 });
-
-
-

@@ -11,7 +11,7 @@ function readUri(uri) {
   return new Promise((resolve, reject) => {
     fetch(uri, { headers: { 'X-Presto-User': 'presto' } })
       .then((res) => res.json())
-      .then((json) => { console.log('json', json); return json;})
+      .then((json) => { debug('json', json); return json;})
       .catch(reject);
   });
 }
@@ -22,7 +22,7 @@ function* readNextUri(nextUri, timeout = 1) {
 
   let resBody = yield readUri(nextUri);
   debug('resBody', resBody);
-  
+
 
 }
 
@@ -58,13 +58,13 @@ co(function* () {
 
 
 
-  //let nextUri 
+  //let nextUri
 
-  
+
   /*let fields = {
     status: stmtResponse.status
   }*/
-  
+
 
 
 })

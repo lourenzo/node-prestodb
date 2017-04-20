@@ -9,7 +9,7 @@ New Node.js wrapper for Presto HTTP API.
 ```js
 'use strict';
 
-const PrestoClient = require('./lib');
+const PrestoClient = require('prestodb');
 
 let prestoClient = new PrestoClient({
   url: 'http://server-url:8080',

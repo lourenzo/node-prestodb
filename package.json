@@ -1,7 +1,7 @@
 {
-  "name": "node-prestodb",
-  "version": "1.0.0",
-  "description": "PrestoDB Client for NodeJS",
+  "name": "prestodb",
+  "version": "0.1.0",
+  "description": "Facebook's PrestoDB Client for NodeJS",
   "main": "lib/index.js",
   "author": "Lourenzo Ferreira <lourenzo@gmail.com>",
   "license": "MIT",

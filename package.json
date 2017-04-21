@@ -1,6 +1,6 @@
 {
   "name": "prestodb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Facebook's PrestoDB Client for NodeJS",
   "main": "lib/index.js",
   "author": "Lourenzo Ferreira <lourenzo@gmail.com>",

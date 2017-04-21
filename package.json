@@ -8,6 +8,10 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lourenzo/node-prestodb"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "co": "^4.6.0",

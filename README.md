@@ -1,6 +1,6 @@
 # Presto db Client
 
-A new Presto HTTP API wrapper for Node.js.
+A new wrapper around [Presto HTTP API](https://github.com/prestodb/presto/wiki/HTTP-Protocol) wrapper for Node.js.
 
 ## Usage
 
@@ -12,7 +12,7 @@ const PrestoClient = require('prestodb');
 let prestoClient = new PrestoClient({
   url: 'http://server-url:8080',
   user: 'presto',
-	nextUriTimeout: 200 // in miliseconds
+  nextUriTimeout: 200 // in miliseconds
 });
 
 prestoClient.sendStatement('SELECT * FROM catalog.schema.table')
@@ -24,3 +24,10 @@ prestoClient.sendStatement('SELECT * FROM catalog.schema.table')
 	});
 
 ```
+
+
+## Todo
+
+- [ ] Offer a EventEmitter version
+- [ ] Send progress info
+- [ ] More efficient request queueing and throttling 

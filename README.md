@@ -12,6 +12,8 @@ const PrestoClient = require('prestodb');
 let prestoClient = new PrestoClient({
   url: 'http://server-url:8080',
   user: 'presto',
+  catalog: 'catalog',
+  schema: 'schema',
   nextUriTimeout: 200 // in miliseconds
 });
 

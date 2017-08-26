@@ -19,12 +19,11 @@ let prestoClient = new PrestoClient({
 
 prestoClient.sendStatement('SELECT * FROM catalog.schema.table')
   .then((result) => {
-		console.log(result)
-	})
+    console.log(result)
+  })
   .catch((error) => {
-		console.error({ error })
-	});
-
+    console.error({ error })
+  });
 ```
 
 
